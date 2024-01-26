@@ -30,3 +30,18 @@ nav li {
   font-weight: bolder;
   font-size: 1.3rem;
 }
+.container {
+  height: 75vh;
+}
+.bottom {
+  position: static;
+  height: 13vh;
+  background-color: black;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#myprogessbar {
+  width: 170vh;
+}

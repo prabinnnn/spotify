@@ -60,3 +60,16 @@ nav li {
 #myprogessbar {
   width: 170vh;
 }
+.songiteam {
+  height: 50px;
+  display: flex;
+  background-color: white;
+  color: black;
+  width: 80%;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.songiteam img {
+  width: 23px;
+}

@@ -36,7 +36,7 @@ nav li {
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
-  width: 86%;
+  width: 91%;
   margin: 23px auto;
   border-radius: 12px;
   padding: 34px;
@@ -58,7 +58,10 @@ nav li {
   cursor: pointer;
 }
 #myprogessbar {
-  width: 170vh;
+  width: 200vh;
+}
+.songiteamcontainer {
+  margin-top: 74px;
 }
 .songiteam {
   height: 50px;
@@ -75,4 +78,19 @@ nav li {
   width: 43px;
   margin: 0 23px;
   border-radius: 34px;
+}
+.timestamp {
+  margin: 0 23px;
+}
+.timestamp i {
+  cursor: pointer;
+}
+.songinfo {
+  position: relative;
+  left: 10vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.songinfo img {
+  opacity: 0;
+  transition: opacity is ease-in;
 }

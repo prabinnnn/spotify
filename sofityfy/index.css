@@ -69,7 +69,10 @@ nav li {
   margin: 12px 0;
   justify-content: space-between;
   align-items: center;
+  border-radius: 34px;
 }
 .songiteam img {
-  width: 23px;
+  width: 43px;
+  margin: 0 23px;
+  border-radius: 34px;
 }

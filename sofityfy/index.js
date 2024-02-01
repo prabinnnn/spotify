@@ -66,12 +66,16 @@ masterplay.addEventListener("click", () => {
     audioelement.play();
     masterplay.classList.remove("fa-play-circle");
     masterplay.classList.add("fa-pause-play");
+    gif.style.opacity = 1;
   } else {
     audioelement.pause();
     masterplay.classList.remove("fa-pause-play");
     masterplay.classList.add("fa-play-circle");
+    gif.style.opacity = 0;
   }
 });
-document.addEventListener("timeupdate", () => {
+audioelement.addEventListener("timeupdate", () => {
   console.log("timeupdate");
+  Progress = parseInt((audioelement.currentTime / audioelement.duration) * 100);
+  console.log(Progress);
 });

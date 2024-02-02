@@ -7,57 +7,52 @@ let gif = document.getElementById("gif");
 let song = [
   {
     songname: "salma isqh",
-    filepath: "music/1.mp3",
+    filepath: "sofityfy/music/1.mp3",
     coverpage: "1.jpg",
   },
   {
     songname: "salma isqh",
-    filepath: "music/1.mp3",
+    filepath: "sofityfy/music/2.mp3",
     coverpage: "1.jpg",
   },
   {
     songname: "salma isqh",
-    filepath: "music/1.mp3",
+    filepath: "sofityfy/music/3.mp3",
     coverpage: "1.jpg",
   },
   {
     songname: "salma isqh",
-    filepath: "music/1.mp3",
+    filepath: "sofityfy/music/4.mp3",
     coverpage: "1.jpg",
   },
   {
     songname: "salma isqh",
-    filepath: "music/1.mp3",
+    filepath: "sofityfy/music/5.mp3",
     coverpage: "1.jpg",
   },
   {
     songname: "salma isqh",
-    filepath: "music/1.mp3",
+    filepath: "sofityfy/music/6.mp3",
     coverpage: "1.jpg",
   },
   {
     songname: "salma isqh",
-    filepath: "music/1.mp3",
+    filepath: "sofityfy/music/7.mp3",
     coverpage: "1.jpg",
   },
   {
     songname: "salma isqh",
-    filepath: "music/1.mp3",
+    filepath: "sofityfy/music/8.mp3",
     coverpage: "1.jpg",
   },
   {
     songname: "salma isqh",
-    filepath: "music/1.mp3",
+    filepath: "sofityfy/music/9.mp3",
     coverpage: "1.jpg",
   },
   {
     songname: "salma isqh",
-    filepath: "music/1.mp3",
-    coverpage: "1.jpg",
-  },
-  {
-    songname: "salma isqh",
-    filepath: "music/1.mp3",
+    filepath: "sofityfy/music/10.mp3",
     coverpage: "1.jpg",
   },
 ];
@@ -75,7 +70,9 @@ masterplay.addEventListener("click", () => {
   }
 });
 audioelement.addEventListener("timeupdate", () => {
-  console.log("timeupdate");
   Progress = parseInt((audioelement.currentTime / audioelement.duration) * 100);
-  console.log(Progress);
+  myprogessbar.value = Progress;
+});
+myprogessbar.addEventListener("change", () => {
+  audioelement.currentTime = myprogessbar.value / 100;
 });

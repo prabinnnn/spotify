@@ -59,7 +59,8 @@ let song = [
 ];
 songiteam.forEach = (element, i) => {
   console.log(element, i);
-  element.getElementsByTagName("img")[0].src = song[i].filepath;
+  element.getElementsByTagName("img")[0].src = song[i].coverpath;
+  element.getElementsByClassName("songname")[0].innerText = song[i].songname;
 };
 masterplay.addEventListener("click", () => {
   if (audioelement.paused || audioelement.currentTime <= 0) {

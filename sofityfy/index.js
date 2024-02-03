@@ -4,6 +4,7 @@ let audioelement = new Audio("1.mp3");
 let masterplay = document.getElementById("masterPlay");
 let myprogessbar = document.getElementById("myprogessbar");
 let gif = document.getElementById("gif");
+let songiteam = Array.from(document.getElementsByClassName("img"));
 let song = [
   {
     songname: "salma isqh",
@@ -56,6 +57,10 @@ let song = [
     coverpage: "1.jpg",
   },
 ];
+songiteam.forEach = (element, i) => {
+  console.log(element, i);
+  element.getElementsByTagName("img")[0].src = song[i].filepath;
+};
 masterplay.addEventListener("click", () => {
   if (audioelement.paused || audioelement.currentTime <= 0) {
     audioelement.play();

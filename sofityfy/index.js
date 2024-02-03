@@ -82,3 +82,6 @@ audioelement.addEventListener("timeupdate", () => {
 myprogessbar.addEventListener("change", () => {
   audioelement.currentTime = myprogessbar.value / 100;
 });
+document.getElementsByClassName("songiteamplay").forEach(() => {
+  Element.addEventListener("click");
+});
